@@ -45,25 +45,25 @@ class App extends Component {
                     'streetAddress': "242, 6-1-242, Main Road, Reddy Colony"
                 },
                 {
-                    'name': "Shri Swaminarayan Mandir",
+                    'name': "Bhadrakali Temple",
                     'type': "Hindu Temple",
-                    'latitude': 26.902167,
-                    'longitude': 75.740999,
-                    'streetAddress': "Sector 9, Chitrakoot"
+                    'latitude': 17.9948,
+                    'longitude': 79.5827,
+                    'streetAddress': "Bhadrakali Temple Rd, Near Lal Bahadur college Kupuwada"
                 },
                 {
-                    'name': "Pratap Marriage Garden",
-                    'type': "Banquet Hall",
-                    'latitude': 26.906464,
-                    'longitude': 75.732889,
-                    'streetAddress': "Arpit Nagar, B Block"
+                    'name': "Thousand Pillar Temple",
+                    'type': "Hindu Temple",
+                    'latitude': 18.0037,
+                    'longitude': 79.5748,
+                    'streetAddress': "Warangal-Hyderabad Rd, Brahmanawada"
                 },
                 {
-                    'name': "ICICI Bank",
-                    'type': "Bank",
-                    'latitude': 26.913179,
-                    'longitude': 75.743447,
-                    'streetAddress': "Lalarpura Road, Gandhi Path"
+                    'name': "Asian Cinemas - Asian Sridevi Mall ",
+                    'type': "Movie Theatre",
+                    'latitude': 18.0046,
+                    'longitude': 79.56297,
+                    'streetAddress': "Bus Stand Road,Hanamkonda"
                 }
             ],
             'map': '',
