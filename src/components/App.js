@@ -10,11 +10,11 @@ class App extends Component {
         this.state = {
             'alllocations': [
                 {
-                    'name': "Bhaskar Vidhya Ashram",
-                    'type': "Private School",
-                    'latitude': 26.9053803,
-                    'longitude': 75.7259351,
-                    'streetAddress': "Lalarpura Road, Gandhi Path"
+                    'name': "warangal railway station",
+                    'type': "Raliway Station",
+                    'latitude': 17.973,
+                    'longitude': 79.6055,
+                    'streetAddress': "Station Road, Shiva Nagar"
                 },
                 {
                     'name': "Handi",
