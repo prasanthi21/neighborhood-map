@@ -17,25 +17,11 @@ class App extends Component {
                     'streetAddress': "Lalarpura Road, Gandhi Path"
                 },
                 {
-                    'name': "Hotel Chhavi Holidays",
-                    'type': "Hotel",
-                    'latitude': 26.9055311,
-                    'longitude': 75.728137,
-                    'streetAddress': "Plot No. 11/12, Vivek Vihar"
-                },
-                {
                     'name': "Handi",
                     'type': "Restaurant",
                     'latitude': 26.906990,
                     'longitude': 75.742848,
                     'streetAddress': "18, Gautam Marg, Vaishali Nagar"
-                },
-                {
-                    'name': "INOX - Amrapali",
-                    'type': "Movie Theater",
-                    'latitude': 26.912631,
-                    'longitude': 75.743389,
-                    'streetAddress': "C-1, Vaibhav Complex"
                 },
                 {
                     'name': "Blue Dart",
