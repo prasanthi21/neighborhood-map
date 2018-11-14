@@ -91,7 +91,7 @@ class App extends Component {
         this.closeInfoWindow = this.closeInfoWindow.bind(this);
     }
 
-    componentDidMount() {
+     componentDidMount() {
         // Connect the initMap() function within this class to the global window context,
         // so Google Maps can invoke it
         window.initMap = this.initMap;
@@ -159,7 +159,6 @@ class App extends Component {
 
     /**
      * Open the infowindow for the marker
-     * @param {object} location marker
      */
     openInfoWindow(marker) {
         this.closeInfoWindow();
@@ -168,9 +167,44 @@ class App extends Component {
         this.setState({
             'prevmarker': marker
         });
+        this.state.infowindow.setContent('Loading Data...');
         this.state.map.setCenter(marker.getPosition());
         this.state.map.panBy(0, -200);
+        this.getMarkerInfo(marker);
     }
+
+    /**
+     * Retrive the location data from the foursquare api for the marker and display it in the infowindow
+     */
+    getMarkerInfo(marker) {
+        var self = this;
+        var clientId = "TPIDDHBKB2QFBWEV2MPDOFGUSWXCXGAA5IVOWEMN5ASR3UJW";
+        var clientSecret = "4HB1ZZJBVXC3F0BREBPSGXYK0VZ5ALS4XRNJZSBP1JROG0DE";
+        var url = "https://api.foursquare.com/v2/venues/search?client_id=" + clientId + "&client_secret=" + clientSecret + "&v=20130815&ll=" + marker.getPosition().lat() + "," + marker.getPosition().lng() + "&limit=1";
+        fetch(url)
+            .then(
+                function (response) {
+                    if (response.status !== 200) {
+                        self.state.infowindow.setContent("Sorry data can't be loaded");
+                        return;
+                    }
+
+                    // Examine the text in the response
+                    response.json().then(function (data) {
+                        var location_data = data.response.venues[0];
+                        var verified = '<b>Verified Location: </b>' + this.state.name + '<br>';
+                        var checkinsCount = '<b>Street Address: </b>' + this.state.streetAddress + '<br>';
+                    });
+                }
+            )
+            .catch(function (err) {
+                self.state.infowindow.setContent("Sorry data can't be loaded");
+            });
+    }
+
+    /**
+     * Close the infowindow for the marker
+     */
     closeInfoWindow() {
         if (this.state.prevmarker) {
             this.state.prevmarker.setAnimation(null);
@@ -181,9 +215,6 @@ class App extends Component {
         this.state.infowindow.close();
     }
 
-    /**
-     * Render function of App
-     */
     render() {
         return (
             <div>
@@ -197,10 +228,6 @@ class App extends Component {
 
 export default App;
 
-/**
- * Load the google maps Asynchronously
- * @param {url} url of the google maps script
- */
 function loadMapJS(src) {
     var ref = window.document.getElementsByTagName("script")[0];
     var script = window.document.createElement("script");
