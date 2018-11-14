@@ -64,6 +64,20 @@ class App extends Component {
                     'latitude': 18.0046,
                     'longitude': 79.56297,
                     'streetAddress': "Bus Stand Road,Hanamkonda"
+                },
+                {
+                    'name': "Kakatiya Musical Garden",
+                    'type': "Garden",
+                    'latitude': 17.9911,
+                    'longitude': 79.5888,
+                    'streetAddress': "Near & Back Side of Warangal Muncipal Corporation , Near MGM"
+                },
+                {
+                    'name': "Hotel Suprabha",
+                    'type': "Hotel",
+                    'latitude': 18.0002,
+                    'longitude': 79.5559,
+                    'streetAddress': "Nakkalagutta, NH163, Balasamudram"
                 }
             ],
             'map': '',
