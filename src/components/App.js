@@ -17,32 +17,32 @@ class App extends Component {
                     'streetAddress': "Station Road, Shiva Nagar"
                 },
                 {
-                    'name': "Handi",
-                    'type': "Restaurant",
-                    'latitude': 26.906990,
-                    'longitude': 75.742848,
-                    'streetAddress': "18, Gautam Marg, Vaishali Nagar"
+                    'name': "Ramappa Lake",
+                    'type': "Lake",
+                    'latitude': 18.239,
+                    'longitude': 79.9361,
+                    'streetAddress': "Ramappa Lake,warangal"
                 },
                 {
-                    'name': "Blue Dart",
-                    'type': "Courier Service",
-                    'latitude': 26.911103,
-                    'longitude': 75.738878,
-                    'streetAddress': "Vaishali Tower, Vaishali Nagar"
+                    'name': "Laknavaram Cheruvu",
+                    'type': "lake",
+                    'latitude': 18.1494,
+                    'longitude': 80.073,
+                    'streetAddress': "Laknavaram Cheruvu,Warangal"
                 },
                 {
-                    'name': "Hotel Seven Seas",
-                    'type': "3-Star Hotel",
-                    'latitude': 26.906069,
-                    'longitude': 75.739583,
-                    'streetAddress': "A-6, Nemi Nagar, Gandhi Path"
+                    'name': "University Gate Bus Stop",
+                    'type': "Bus Stop",
+                    'latitude': 18.0215,
+                    'longitude': 79.5574,
+                    'streetAddress': "Kakatiya University Bypass Rd, Kakatiya University"
                 },
                 {
-                    'name': "Global Heart & General Hospital",
-                    'type': "Hospital",
-                    'latitude': 26.905506,
-                    'longitude': 75.738762,
-                    'streetAddress': "C1/27, Opposite Bharat Apartment"
+                    'name': "Ashoka A-plex",
+                    'type': "movie theater",
+                    'latitude': 18.0076,
+                    'longitude': 79.5671,
+                    'streetAddress': "242, 6-1-242, Main Road, Reddy Colony"
                 },
                 {
                     'name': "Shri Swaminarayan Mandir",
